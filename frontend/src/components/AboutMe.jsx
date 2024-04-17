@@ -21,7 +21,7 @@ export const AboutMe = () => {
                 <li>Junior full-stack software engineer.</li>
                 <li>Experience with Python, JavaScript, No/SQL databases, React framework, APIs, testing</li>
                 <li>A decade of comms and policy experience in Brussels and London, interpreting the European Union and securing ports.</li>
-                <li>Now looking to use passion for crafting solutions and build things.</li>
+                <li>Now looking to use passion for crafting solutions to build things.</li>
             </ul>
         </div>  
     )
