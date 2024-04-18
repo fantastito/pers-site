@@ -545,6 +545,10 @@ video {
   --tw-contain-style:  ;
 }
 
+.static {
+  position: static;
+}
+
 .App {
   text-align: center;
 }
