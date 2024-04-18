@@ -1,15 +1,33 @@
 import React from 'react';
-import { render, fireEvent, waitFor } from '@testing-library/react';
-import { AboutMe } from '../../components/AboutMe';
 
-delete window.location;
-window.location = { href: 'http://localhost/' };
+import { generateAboutMe } from '../../components/AboutMe';
 
-describe('AboutMe component', () => {
-    test('renders text correctly', () => {
-        const { getByText } = render(<AboutMe />);
-        
-        const titleElement = getByText('Junior full-stack software engineer.');
-        expect(titleElement).toBeInTheDocument();
-    })
-})
+describe('generateAboutMe function', () => {
+  it('should generate the AboutMe section HTML markup correctly', () => {
+    
+    const mockAboutMe = {
+      name: "Simon Budden",
+      title: "Software Developer",
+      location: "London, UK",
+      email: "simon.budden@gmail.com",
+      summary: [
+        "Junior full-stack software engineer.",
+        "Experience with Python, JavaScript, No/SQL databases, React, APIs, test-driven development, object-oriented programming.",
+        "A decade of comms and policy experience in Brussels and London, interpreting the European Union and securing ports.",
+        "Now looking to use passion for crafting solutions to build things."
+      ],
+      skills: ["JavaScript", "Python", "HTML/CSS", "SQL", "Git", "Agile methodologies", "Project management", "Stakeholder management", "Copywriting"],
+      links: {
+        github: "https://www.github.com/fantastito",
+        linkedin: "https://www.linkedin.com/in/simon-budden-0b280518/",
+        email: "mailto:simon.budden@gmail.com"
+      }
+    };
+
+    const generatedHTML = generateAboutMe(mockAboutMe);
+
+    expect(generatedHTML).toContain('London');
+    expect(generatedHTML).toContain('Brussels');
+    expect(generatedHTML).toContain('Agile');
+  });
+});

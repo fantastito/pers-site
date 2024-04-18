@@ -1,4 +1,4 @@
-export const data = {
+export const resume = {
     aboutme: {
         name: "Simon Budden",
         title: "Software Developer",
@@ -10,7 +10,12 @@ export const data = {
             "A decade of comms and policy experience in Brussels and London, interpreting the European Union and securing ports.",
             "Now looking to use passion for crafting solutions to build things."
         ],
-        skills: ["JavaScript", "Python", "HTML/CSS", "SQL", "Git", "Agile methodologies", "Project management", "Stakeholder management", "Copywriting"]
+        skills: ["JavaScript", "Python", "HTML/CSS", "SQL", "Git", "Agile methodologies", "Project management", "Stakeholder management", "Copywriting"],
+        links: {
+            github: "https://www.github.com/fantastito",
+            linkedin: "https://www.linkedin.com/in/simon-budden-0b280518/",
+            email: "mailto:simon.budden@gmail.com"
+        }
     },
     experience: [
         {
