@@ -1,4 +1,4 @@
-function GenerateAboutMe({ aboutMeData }) {
+function AboutMe({ aboutMeData }) {
     if (!aboutMeData) {
       return <div>No AboutMe data.</div>;
     }
@@ -7,7 +7,7 @@ function GenerateAboutMe({ aboutMeData }) {
   
     return (
       <div>
-        <h2>About Me</h2>
+        <h2>About me</h2>
         <p>{location}</p>
   
         <ul>
@@ -32,5 +32,5 @@ function GenerateAboutMe({ aboutMeData }) {
     );
   }
   
-  export { GenerateAboutMe };
+  export { AboutMe };
   
