@@ -30,7 +30,7 @@ export const resume = {
             skills: ["JavaScript", "Python", "Postgres", "Flask", "Visual Studio Code", "Jest", "Swift", "Xcode"]
         },
         {
-            company: "Dept. for Science, Innovation and Technology, London",
+            company: "Dept. for Science, Innovation and Technology",
             date: "April to Oct. 2023",
             role: "Cyber security policy advisor",
             details: [
