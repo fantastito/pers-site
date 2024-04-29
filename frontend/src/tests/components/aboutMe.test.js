@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
-import { generateAboutMe } from '../../components/AboutMe';
+import { GenerateAboutMe } from '../../components/AboutMe';
 
-describe('generateAboutMe function', () => {
+describe('GenerateAboutMe function', () => {
   it('should generate the AboutMe section correctly', () => {
     const mockAboutMe = {
       name: "Simon Budden",
@@ -22,7 +22,7 @@ describe('generateAboutMe function', () => {
       }
     };
 
-    render(generateAboutMe(mockAboutMe));
+    render(<GenerateAboutMe aboutMeData={mockAboutMe} />);
 
     // Checking content directly within the rendered HTML
     expect(screen.getByText("London, UK")).toBeInTheDocument();

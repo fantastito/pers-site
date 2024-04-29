@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { generateExperience } from '../../components/Experience';
+import { GenerateExperience } from '../../components/Experience';
 
 describe('generateExperience function', () => {
   it('should generate the Experience section correctly', () => {
@@ -48,7 +48,7 @@ describe('generateExperience function', () => {
         },
     ];
 
-    render(generateExperience(mockExperience));
+    render(<GenerateExperience experienceData={mockExperience} />);
 
     expect(screen.getByText("Makers Academy")).toBeInTheDocument();
     expect(screen.getByText("Dept. for Science, Innovation and Technology")).toBeInTheDocument();
