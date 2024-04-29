@@ -47,7 +47,7 @@ export const resume = {
                 "Established network of European counterparts and conducted a post-implementation review of legislation.",
                 "Interpreted novel legislation and designed workflow for enforcement at pace, which was used as a template by a sister division."
             ],
-            skills: ["Excel", "Security requirements", "Indsutry engagement", "Problem solving", "Attention to detail", "Teamwork"]
+            skills: ["Excel", "Security requirements", "Industry engagement", "Problem solving", "Attention to detail", "Teamwork"]
         },
         {
             company: "European Parliament",
@@ -82,7 +82,7 @@ export const resume = {
         },
         {
             title: "Acebook Mobile",
-            description: "An iOS frontend for a MERN social media app develped from a seed repo.",
+            description: "An iOS frontend for a MERN social media app developed from a seed repo.",
             link: "https://github.com/fantastito/Acebook-Mobile",
             tech: ["SwiftUI", "XCode", "Cloudinary", "Postman", "Trello"]
         }

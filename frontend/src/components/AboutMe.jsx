@@ -1,27 +1,20 @@
-import { resume } from '../resume.js'
-
-const aboutMe = resume.aboutme;
-
-function generateAboutMe() {
-    const summaryItems = aboutMe.summary.map(item => `<li>${item}</li>`).join('');
-    const skillsList = aboutMe.skills.map(skill => `<li>${skill}</li>`).join('');
-    return `
-        <h2>About me</h2>
-        <p>${aboutMe.location}</p>
+function generateAboutMe(aboutMe) {
+    const summaryItems = aboutMe.summary.map(item => <li key={item} className="mb-2">{item}</li>);
+    const skillsList = aboutMe.skills.map(skill => <li key={skill} className="mb-2">{skill}</li>);
+    return (
         <div>
-        <a href="${aboutMe.links.github}">GitHub</a>
-        <a href="${aboutMe.links.linkedin}">LinkedIn</a>
-        <a href="${aboutMe.links.email}">Email</a>
+            <h2 className="text-2xl font-bold mb-4">About me</h2>
+            <p className="mb-2">{aboutMe.location}</p>
+            <div className="mb-4">
+                <a href={aboutMe.links.github} className="mr-4">GitHub</a>
+                <a href={aboutMe.links.linkedin} className="mr-4">LinkedIn</a>
+                <a href={aboutMe.links.email}>Email</a>
+            </div>
+            <ul className="mb-4">{summaryItems}</ul>
+            <h3 className="text-xl font-bold mb-2">Skills</h3>
+            <ul>{skillsList}</ul>
         </div>
-        <ul>${summaryItems}</ul>
-        <h3>Skills</h3>
-        <ul>${skillsList}</ul>
-    `;
+    );
 }
 
-function renderAboutMe() {
-    const aboutMeContainer = document.getElementById('about-me');
-    aboutMeContainer.innerHTML = generateAboutMe();
-  }
-  
-export { renderAboutMe, generateAboutMe };
+export { generateAboutMe };

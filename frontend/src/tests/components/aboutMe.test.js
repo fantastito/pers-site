@@ -1,10 +1,8 @@
-import React from 'react';
-
+import { render, screen } from '@testing-library/react';
 import { generateAboutMe } from '../../components/AboutMe';
 
 describe('generateAboutMe function', () => {
-  it('should generate the AboutMe section HTML markup correctly', () => {
-    
+  it('should generate the AboutMe section correctly', () => {
     const mockAboutMe = {
       name: "Simon Budden",
       title: "Software Developer",
@@ -24,10 +22,11 @@ describe('generateAboutMe function', () => {
       }
     };
 
-    const generatedHTML = generateAboutMe(mockAboutMe);
+    render(generateAboutMe(mockAboutMe));
 
-    expect(generatedHTML).toContain('London');
-    expect(generatedHTML).toContain('Brussels');
-    expect(generatedHTML).toContain('Agile');
+    // Checking content directly within the rendered HTML
+    expect(screen.getByText("London, UK")).toBeInTheDocument();
+    expect(screen.getByText("Agile methodologies")).toBeInTheDocument();
+    expect(screen.getByText(/Brussels/)).toBeInTheDocument();
   });
 });
