@@ -1,6 +1,6 @@
 function GenerateAboutMe({ aboutMeData }) {
     if (!aboutMeData) {
-      return <div>No data available.</div>;
+      return <div>No AboutMe data.</div>;
     }
   
     const { name, title, location, summary = [], skills = [], links = {} } = aboutMeData;

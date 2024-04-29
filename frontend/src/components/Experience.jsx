@@ -1,35 +1,36 @@
-  
-  // Function to generate HTML for each experience entry
-  function generateExperienceHTML(experience) {
-    return `
-      <div class="experience">
-        <h2>${experience.title}</h2>
-        <h3>${experience.date}</h3>
-        <h4>${experience.role}</h4>
-        <ul>
-          ${experience.details.map(detail => `<li>${detail}</li>`).join('')}
-        </ul>
-        ${experience.skills.length > 0 ? `
-          <div class="skills">
-            <h4>Skills:</h4>
-            <ul>
-              ${experience.skills.map(skill => `<li>${skill}</li>`).join('')}
-            </ul>
-          </div>` : ''
-        }
-      </div>
-    `;
+function Experience({ experienceData }) {
+  if (!experienceData) {
+    return <div>No Experience data.</div>;
   }
-  
-  // Function to render the resume summary
-  function renderResumeSummary() {
-    const container = document.getElementById('resume-summary');
-    experienceData.forEach(experience => {
-      const experienceHTML = generateExperienceHTML(experience);
-      container.innerHTML += experienceHTML;
-    });
-  }
-  
-  // Call the render function when the page loads
-  window.addEventListener('load', renderResumeSummary);
+
+  return (
+    <div>
+      <h2>Experience</h2>
+
+      {experienceData.map((job, index) => (
+        <div key={index} style={{ marginBottom: "20px" }}>
+          <h3>{job.company}</h3>
+          <p><strong>Role:</strong> {job.role}</p>
+          <p><strong>Date:</strong> {job.date}</p>
+
+          <ul>
+            {job.details.map((detail, i) => (
+              <li key={i}>{detail}</li>
+            ))}
+          </ul>
+
+          <h4>Skills</h4>
+          <ul>
+            {job.skills.map((skill, j) => (
+              <li key={j}>{skill}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export { Experience };
+
   
