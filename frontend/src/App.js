@@ -13,7 +13,7 @@ function App() {
       <header className="App-header">
         <TitleCard/>
         <AboutMe aboutMeData={resume.aboutme} />
-        <Projects/>
+        <Projects projectsData={resume.projects}/>
         <Experience experienceData={resume.experience} />
       </header>
     </div>

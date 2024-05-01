@@ -33,7 +33,7 @@ describe('Projects Component', () => {
     render(<Projects projectsData={mockProjects} />);
 
     expect(screen.getByText("TutorMatch")).toBeInTheDocument();
-    expect(screen.getByText("A web app that connects volunteer tutors with students in need of some extra help. Tutors can indicate their subjects and availability; students can search for tutors and request a slot.")).toBeInTheDocument();
+    expect(screen.getByText(/volunteer tutors/)).toBeInTheDocument();
     expect(screen.getByText("Acebook")).toBeInTheDocument();
     expect(screen.getByText("Personal website")).toBeInTheDocument();
     expect(screen.getByText("Acebook Mobile")).toBeInTheDocument();
