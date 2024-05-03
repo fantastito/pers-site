@@ -9,12 +9,16 @@ import { resume } from './resume.js';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-white text-black">
       <header className="App-header">
         <TitleCard/>
+        <div className="border-b border-gray-300 my-4"></div>
         <AboutMe aboutMeData={resume.aboutme} />
+        <div className="border-b border-gray-300 my-4"></div>
         <Projects projectsData={resume.projects}/>
+        <div className="border-b border-gray-300 my-4"></div>
         <Experience experienceData={resume.experience} />
+        <div className="border-b border-gray-300 my-4"></div>
       </header>
     </div>
   );

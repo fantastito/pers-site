@@ -3,30 +3,30 @@ function AboutMe({ aboutMeData }) {
       return <div>No AboutMe data.</div>;
     }
   
-    const { name, title, location, summary = [], skills = [], links = {} } = aboutMeData;
+    const { location, summary = [], skills = [], links = {} } = aboutMeData;
   
     return (
-      <div>
-        <h2>About me</h2>
-        <p>{location}</p>
+      <div className="p-4">
+        <h2 className="text-xl font-bold mb-4">About me</h2>
+        <p className="mb-2">{location}</p>
   
-        <ul>
+        <ul className="mb-4">
           {summary.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li key={index} className="mb-1">{item}</li>
           ))}
         </ul>
   
-        <h3>Skills</h3>
-        <ul>
+        <h3 className="text-lg font-bold mb-2">Skills</h3>
+        <ul className="list-disc pl-5 mb-4">
           {skills.map((skill, index) => (
-            <li key={index}>{skill}</li>
+            <li key={index} className="mb-1">{skill}</li>
           ))}
         </ul>
   
-        <div>
-          <a href={links.github}>GitHub</a>
-          <a href={links.linkedin}>LinkedIn</a>
-          <a href={links.email}>Email</a>
+        <div className="flex space-x-4">
+          <a href={links.github} className="underline text-black">GitHub</a>
+          <a href={links.linkedin} className="underline text-black">LinkedIn</a>
+          <a href={links.email} className="underline text-black">Email</a>
         </div>
       </div>
     );
