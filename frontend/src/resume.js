@@ -5,10 +5,9 @@ export const resume = {
         location: "London, UK",
         email: "simon.budden@gmail.com",
         summary: [
-            "Junior full-stack software engineer.",
-            "Experience with Python, JavaScript, No/SQL databases, React, APIs, test-driven development, object-oriented programming.",
-            "A decade of comms and policy experience in Brussels and London, interpreting the European Union and securing ports.",
-            "Now looking to use passion for crafting solutions to build things."
+            "Simon is a junior software developer with 10 years policy and comms experience in Brussels and London.",
+            "He is looking to use his passion for crafting solutions and transfer skills gained through interpreting the European Union, analysing security regulations, implementing legislation, and leading high-visibility projects.", 
+            "He is well placed to communicate technical complexities to diverse stakeholders."
         ],
         skills: ["JavaScript", "Python", "HTML/CSS", "SQL", "Git", "Agile methodologies", "Project management", "Stakeholder management", "Copywriting"],
         links: {
