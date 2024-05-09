@@ -8,10 +8,14 @@ function Experience({ experienceData }) {
       <h2 className="text-2xl text-center font-bold text-gray-800 mb-6">Experience</h2>
 
       {experienceData.map((job, index) => (
-        <div key={index} className="mb-8 p-4 shadow-md rounded-lg bg-white">
-          <h3 className="text-xl font-semibold text-gray-700 mb-2">{job.role}</h3>
-          <p className="text-gray-600 mb-2">{job.company} | {job.date}</p>
-
+        <div key={index} className="mb-8 p-4 border rounded-md border-gray-300 bg-white">
+          
+          <div className="flex items-center justify-between mb-2">
+            <h3 className="text-xl font-semibold text-gray-700 mr-3">{job.role}</h3>
+            <p className="text-gray-600 text-right">{job.date}</p>
+          </div>
+          <p className="text-gray-600 mb-2">{job.company}</p>
+          
           <div className="mb-4 pl-4">
           <ul className="list-disc list-inside text-gray-500">
             {job.details.map((detail, i) => (

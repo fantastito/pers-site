@@ -20,13 +20,13 @@ export const resume = {
         {
             company: "Makers Academy",
             date: "Oct. 2023 to Feb. 2024",
-            role: "Coding and Software Development Bootcamp",
+            role: "Junior software developer",
             details: [
-                "Python-based coding foundations module covering basics of coding and programmes' structure and cloud deployment.",
+                "Bootcamp starting with python-based coding foundations module covering basics of coding and programmes' structure and cloud deployment.",
                 "Software development module focusing on JavaScript and web applications, including RESTful APIs and agile group projects.",
                 "Underscored importance of modern software development practices such as using Git and GitHub, pair programming, test-driven development, etc."
             ],
-            skills: ["JavaScript", "Python", "Postgres", "Flask", "Visual Studio Code", "Jest", "Swift", "Xcode"]
+            skills: ["JavaScript", "Python", "Postgres", "Flask", "Visual Studio Code", "Jest", "Swift", "Xcode", "Object-Oriented Design", "Test-Driven Development", "Agile"]
         },
         {
             company: "Dept. for Science, Innovation and Technology",
