@@ -9,7 +9,7 @@ import { resume } from './resume.js';
 
 function App() {
   return (
-    <div className="App bg-white text-black">
+    <div className="App bg-white text-black mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <header className="App-header">
         <TitleCard/>
         <div className="border-b border-gray-300 my-4"></div>

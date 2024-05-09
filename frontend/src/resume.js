@@ -53,7 +53,7 @@ export const resume = {
             date: "June 2015 to Sept. 2020",
             role: "Communications officer",
             details: [
-                "Worked on bringing together the European Parliament's visitor services, including renewing common visiting website.",
+                "Integrated the European Parliament's visitor services, including renewing common visiting website.",
                 "Developed engaging comms materials for online, print and facilities.",
                 "Implemented and managed high-visibility projects to improve the parliament campus."
             ],
@@ -65,24 +65,28 @@ export const resume = {
             title: "TutorMatch",
             description: "A web app that connects volunteer tutors with students in need of some extra help. Tutors can indicate their subjects and availability; students can search for tutors and request a slot. Try logging in as stu@email.com / Password123!",
             link: "https://github.com/KatBiel/TutorMatch",
+            liveUrl: "https://tutormatchfe.onrender.com/",
             tech: ["Flask", "React", "MongoDB", "Python", "Node.js", "bootstrap", "firebase", "Postman", "Trello", "Visual Studio"]
         },
         {
             title: "Acebook",
             description: "A social media web app developed from legacy code.",
             link: "https://github.com/fantastito/Acebook",
+            liveUrl: null,
             tech: ["MongoDB", "Express", "React", "Node.js", "CSS", "Postman", "Trello", "Visual Studio"]
         },
         {
             title: "Personal website",
             description: "A portfolio website and platform for projects.",
             link: "https://github.com/fantastito/pers-site",
+            liveUrl: null,
             tech: ["MongoDB", "Express", "React", "Node.js", "Tailwind", "Visual Studio"]
         },
         {
             title: "Acebook Mobile",
             description: "An iOS frontend for a MERN social media app developed from a seed repo.",
             link: "https://github.com/fantastito/Acebook-Mobile",
+            liveUrl: null,
             tech: ["SwiftUI", "XCode", "Cloudinary", "Postman", "Trello"]
         }
     ]

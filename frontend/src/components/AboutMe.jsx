@@ -17,12 +17,11 @@ function AboutMe({ aboutMeData }) {
         <a href={links.email} className="text-blue-500 hover:text-blue-700 underline">Email</a>
       </div>
 
-        <h3 className="text-lg- text-center font-bold mb-2">Skills</h3>
-        <p className="text-center">
-        {skills.map((skill, index) => (
-          <span key={index}>{skill}{index < skills.length - 1 ? ' • ' : ''}</span>
-        ))}
-        </p>
+        <ul className="flex flex-wrap gap-2 justify-center">
+          {skills.map((skill, j) => (
+            <li key={j} className="bg-gray-200 rounded-full px-3 py-1 text-sm text-gray-700">{skill}</li>
+          ))}
+        </ul>
   
       </div>
     );
