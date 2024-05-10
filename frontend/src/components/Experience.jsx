@@ -4,7 +4,7 @@ function Experience({ experienceData }) {
   }
 
   return (
-    <div className="p-4">
+    <div className="pt-32 p-4">
       <h2 className="text-2xl text-center font-bold text-gray-800 mb-6">Experience</h2>
 
       {experienceData.map((job, index) => (

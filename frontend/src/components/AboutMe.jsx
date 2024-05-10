@@ -1,3 +1,6 @@
+import githubMark from "../assets/githubMark.png"
+import linkedInMark from "../assets/linkedInMark.png"
+
 function AboutMe({ aboutMeData }) {
     if (!aboutMeData) {
       return <div>No AboutMe data.</div>;
@@ -8,14 +11,21 @@ function AboutMe({ aboutMeData }) {
     return (
       <div className="p-4">
         <p className="mb-4">
-        {summary.join(' ')}
+          {summary.join(' ')}
         </p>
   
-      <div className="flex justify-center space-x-4 mb-4">
-        <a href={links.github} className="text-blue-500 hover:text-blue-700 underline">GitHub</a>
-        <a href={links.linkedin} className="text-blue-500 hover:text-blue-700 underline">LinkedIn</a>
-        <a href={links.email} className="text-blue-500 hover:text-blue-700 underline">Email</a>
-      </div>
+        <div className="flex justify-center items-center space-x-4 mb-4">
+          <a href={links.github} className="rounded-full">
+            <img src={githubMark} alt="GitHub portfolio link" className="w-10 h-10 object-cover transition-transform duration-300 transform hover:scale-110" />
+          </a>
+          <a href={links.linkedin} className="">
+            <img src={linkedInMark} alt="LinkedIn portfolio link" className="w-10 h-10 object-cover transition-transform duration-300 transform hover:scale-110" />
+          </a>
+          <a href={links.email} className="flex items-center text-5xl transition-transform duration-300 transform hover:scale-110">
+            ✉️
+          </a>
+        </div>
+
 
         <ul className="flex flex-wrap gap-2 justify-center">
           {skills.map((skill, j) => (

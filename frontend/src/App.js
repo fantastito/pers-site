@@ -13,9 +13,9 @@ function App() {
       <header className="App-header">
         <TitleCard/>
         <AboutMe aboutMeData={resume.aboutme} />
-        <div className="border-b border-gray-300 my-4"></div>
+        {/* <div className="border-b border-gray-300 my-4"></div> */}
         <Projects projectsData={resume.projects}/>
-        <div className="border-b border-gray-300 my-4"></div>
+        {/* <div className="border-b border-gray-300 my-4"></div> */}
         <Experience experienceData={resume.experience} />
       </header>
     </div>
