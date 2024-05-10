@@ -80,7 +80,7 @@ export const resume = {
             description: "A portfolio website and platform for projects.",
             link: "https://github.com/fantastito/pers-site",
             liveUrl: null,
-            tech: ["MongoDB", "Express", "React", "Node.js", "Tailwind", "Visual Studio"]
+            tech: ["React", "Express", "Node.js", "Jest", "Tailwind"]
         },
         {
             title: "Acebook Mobile",
