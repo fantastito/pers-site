@@ -35,7 +35,7 @@ export const resume = {
             details: [
                 "Developed new UK Internet of Things cyber security legislation and collaborated on implementation of enforcement regime."
             ],
-            skills: ["Security requirements", "Compliance", "Excel"]
+            skills: ["Security requirements", "Compliance", "Excel", "Legislation"]
         },
         {
             company: "Dept. for Transport",

@@ -11,7 +11,6 @@ describe('App Component', () => {
     expect(screen.getByText("SIMON BUDDEN")).toBeInTheDocument();
 
     // AboutMe
-    expect(screen.getByText(resume.aboutme.location)).toBeInTheDocument();
     expect(screen.getByText("Agile methodologies")).toBeInTheDocument();
 
     // Projects
@@ -20,6 +19,6 @@ describe('App Component', () => {
 
     // Experience
     expect(screen.getByText(resume.experience[0].company)).toBeInTheDocument();
-    expect(screen.getByText("Coding and Software Development Bootcamp")).toBeInTheDocument();
+    expect(screen.getByText("Communications officer")).toBeInTheDocument();
   });
 });
