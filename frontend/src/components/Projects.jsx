@@ -18,7 +18,7 @@ function Projects({ projectsData }) {
                         <h3 className="text-xl font-semibold text-gray-700 mr-4">{project.title}</h3>
                         <div className="flex items-center space-x-2">
                             <a href={project.link} className="inline-flex items-center justify-center rounded-full clip-[circle(50%_at_center)]">
-                                <img src={githubMark} alt="GitHub portfolio link" className="w-6 h-6 object-cover transition-transform duration-300 transform hover:scale-110" />
+                                <img src={githubMark} alt={`GitHub ${project.title} link`} className="w-6 h-6 object-cover transition-transform duration-300 transform hover:scale-110" />
                             </a>{project.liveUrl && <a href={project.liveUrl} className="inline-flex items-center justify-center text-2xl transition-transform duration-300 transform hover:scale-110">
                                 🌐
                             </a>}
