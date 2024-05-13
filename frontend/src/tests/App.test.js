@@ -20,5 +20,8 @@ describe('App Component', () => {
     // Experience
     expect(screen.getByText(resume.experience[0].company)).toBeInTheDocument();
     expect(screen.getByText("Communications officer")).toBeInTheDocument();
+
+    // Footer
+    expect(screen.getByText("© 2024 simonbudden.dev")).toBeInTheDocument();
   });
 });

@@ -6,7 +6,7 @@ export const resume = {
         email: "simon.budden@gmail.com",
         summary: [
             "Simon is a junior software developer with 10 years policy and comms experience in Brussels and London.",
-            "He is looking to use his passion for crafting solutions and transfer skills gained through interpreting the European Union, analysing security regulations, implementing legislation, and leading high-visibility projects.", 
+            "He is looking to apply skills gained through interpreting the European Union, analysing security regulations, and leading high-visibility projects to coding.", 
             "He is well placed to communicate technical complexities to diverse stakeholders."
         ],
         skills: ["JavaScript", "Python", "HTML/CSS", "SQL", "Git", "Agile methodologies", "Project management", "Stakeholder management", "Copywriting"],

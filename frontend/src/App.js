@@ -4,6 +4,7 @@ import { TitleCard } from './components/TitleCard';
 import { AboutMe } from './components/AboutMe';
 import { Projects } from './components/Projects';
 import { Experience } from './components/Experience.jsx';
+import Footer from './components/Footer.jsx';
 
 import { resume } from './resume.js';
 
@@ -13,10 +14,9 @@ function App() {
       <header className="App-header">
         <TitleCard/>
         <AboutMe aboutMeData={resume.aboutme} />
-        {/* <div className="border-b border-gray-300 my-4"></div> */}
         <Projects projectsData={resume.projects}/>
-        {/* <div className="border-b border-gray-300 my-4"></div> */}
         <Experience experienceData={resume.experience} />
+        <Footer />
       </header>
     </div>
   );
