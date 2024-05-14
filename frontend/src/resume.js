@@ -9,7 +9,7 @@ export const resume = {
             "He is looking to apply skills gained through interpreting the European Union, analysing security regulations, and leading high-visibility projects to coding.", 
             "He is well placed to communicate technical complexities to diverse stakeholders."
         ],
-        skills: ["JavaScript", "Python", "HTML/CSS", "SQL", "Git", "Agile methodologies", "Project management", "Stakeholder management", "Copywriting"],
+        skills: ["JavaScript", "Python", "HTML/CSS", "SQL", "Git", "Test-driven developement", "Object-oriented design", "Agile methodologies", "Project management", "Stakeholder management", "Copywriting"],
         links: {
             github: "https://www.github.com/fantastito",
             linkedin: "https://www.linkedin.com/in/simon-budden-0b280518/",
