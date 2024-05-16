@@ -76,11 +76,11 @@ export const resume = {
             tech: ["MongoDB", "Express", "React", "Node.js", "CSS", "Postman", "Trello", "Visual Studio"]
         },
         {
-            title: "Personal website",
-            description: "A portfolio website and platform for projects.",
+            title: "simonbudden.dev",
+            description: "A personal website for portfolio and projects.",
             link: "https://github.com/fantastito/pers-site",
-            liveUrl: null,
-            tech: ["React", "Express", "Node.js", "Jest", "Tailwind"]
+            liveUrl: "https://simonbudden.dev",
+            tech: ["React", "Jest", "Tailwind", "AWS"]
         },
         {
             title: "Acebook Mobile",
