@@ -1,24 +1,22 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { MemoryRouter } from 'react-router-dom'; // Used for routing context in tests
-import Navbar from '../../components/Navbar'; // Adjust the import path as necessary
+import { MemoryRouter } from 'react-router-dom';
+import Navbar from '../../components/Navbar';
 
 describe('Navbar component', () => {
   test('renders without crashing', () => {
-    render(<Navbar />, { wrapper: MemoryRouter }); // Wrap in MemoryRouter for Router functionality
+    render(<Navbar />, { wrapper: MemoryRouter });
   });
 
   test('contains correct links', () => {
     render(<Navbar />, { wrapper: MemoryRouter });
     
-    // Check for CV link
-    const cvLink = screen.getByRole('link', { name: /cv/i });
+    const cvLink = screen.getByRole('link', { name: /Software engineer/i });
     expect(cvLink).toBeInTheDocument();
     expect(cvLink).toHaveAttribute('href', '/cv');
     
-    // Check for Photos link
-    const photosLink = screen.getByRole('link', { name: /photos/i });
+    const photosLink = screen.getByRole('link', { name: /photography/i });
     expect(photosLink).toBeInTheDocument();
-    expect(photosLink).toHaveAttribute('href', '/photos');
+    expect(photosLink).toHaveAttribute('href', '/photography');
   });
 });
