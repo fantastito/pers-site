@@ -3,9 +3,12 @@ import App from '../App';
 import { resume } from '../resume.js';
 
 describe('App Component', () => {
-  it('should render the TitleCard, AboutMe, Projects, and Experience components correctly', () => {
+  it('should render the Navbar, TitleCard, AboutMe, Projects, and Experience components correctly', () => {
 
     render(<App />);
+
+    // Navbar
+    expect(screen.getByText("Photography")).toBeInTheDocument();
 
     // TitleCard
     expect(screen.getByText("SIMON BUDDEN")).toBeInTheDocument();
