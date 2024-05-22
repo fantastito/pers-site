@@ -1,28 +1,22 @@
-import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import { TitleCard } from './components/TitleCard';
-import { AboutMe } from './components/AboutMe';
-import { Projects } from './components/Projects';
-import { Experience } from './components/Experience.jsx';
-import Footer from './components/Footer.jsx';
-import Navbar from './components/Navbar.jsx'
-import Photos from './components/Photos.jsx';
-
-import { resume } from './resume.js';
+import Navbar from './components/Navbar';
+import Resume from './components/Resume';
+import Photos from './components/Photos';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <Router>
       <div className="App bg-white text-black mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-        <header className="App-header">
-          <Navbar/>
-          <TitleCard/>
-          <AboutMe aboutMeData={resume.aboutme} />
-          <Projects projectsData={resume.projects}/>
-          <Experience experienceData={resume.experience} />
-          <Footer />
-        </header>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Resume />} exact />
+          <Route path="/engineer" element={<Resume />} />
+          <Route path="/photography" element={<Photos />} />
+        </Routes>
+        <Footer />
       </div>
     </Router>
   );
