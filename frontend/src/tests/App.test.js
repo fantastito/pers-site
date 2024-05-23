@@ -11,7 +11,7 @@ describe('App Component', () => {
     expect(screen.getByText("Photography")).toBeInTheDocument();
 
     // TitleCard
-    expect(screen.getByText("SIMON BUDDEN")).toBeInTheDocument();
+    expect(screen.getByText("SOFTWARE ENGINEER")).toBeInTheDocument();
 
     // AboutMe
     expect(screen.getByText("Agile methodologies")).toBeInTheDocument();

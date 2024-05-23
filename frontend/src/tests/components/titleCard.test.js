@@ -6,7 +6,7 @@ describe('TitleCard component', () => {
     test('renders title correctly', () => {
         const { getByText } = render(<TitleCard />);
         
-        const titleElement = getByText('SIMON BUDDEN');
+        const titleElement = getByText('SOFTWARE ENGINEER');
         expect(titleElement).toBeInTheDocument();
     })
 })
