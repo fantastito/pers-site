@@ -25,7 +25,7 @@ describe('Generate AboutMe function', () => {
     render(<AboutMe aboutMeData={mockAboutMe} />);
 
     // Checking content directly within the rendered HTML
-    expect(screen.getByText("London, UK")).toBeInTheDocument();
+    expect(screen.getByText("✉️")).toBeInTheDocument();
     expect(screen.getByText("Agile methodologies")).toBeInTheDocument();
     expect(screen.getByText(/Brussels/)).toBeInTheDocument();
   });
