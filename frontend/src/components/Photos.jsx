@@ -1,29 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Gallery from 'react-photo-gallery'
 
-const photos = [
-  {
-    src: 'https://source.unsplash.com/2ShvY8Lf6l0/800x599',
-    width: 4,
-    height: 3,
-  },
-  {
-    src: 'https://source.unsplash.com/Dm-qxdynoEc/800x799',
-    width: 1,
-    height: 1,
-  },
-  // Add more photo objects here
-];
+import { fetchPhotos } from '../flickrAPI';
+import { shuffleArray } from '../utils/shuffle';;
 
-function Photos() {
+const Photos = () => {
+  const [photos, setPhotos] = useState([]);
+
+  useEffect(() => {
+    const userId = '200388503@N03';
+    const getPhotos = async () => {
+      const photosFromFlickr = await fetchPhotos(userId);
+      const shuffledPhotos = shuffleArray(photosFromFlickr);
+      setPhotos(shuffledPhotos);
+    };
+    getPhotos();
+  }, []);
+
   return (
     <div>
-      <div id="photos-content" className="bg-white text-black pt-4 sm:pt-4 md:pt-4 lg:pt-4 px-5 pb-8">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center">PHOTOGRAPHY</h1>
-      </div>
-      <Gallery photos={photos} />
+      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl pt-4 pb-8 font-bold text-center">PHOTOGRAPHY</h1>
+      {photos.length === 0 ? (
+        <p className='text-xl text-center'>📷 Well this is embarrasing... 🤷🏼‍♂️</p>
+      ) : (
+        <Gallery photos={photos} />
+      )}
     </div>
   );
-}
+};
 
 export default Photos;
