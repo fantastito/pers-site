@@ -9,7 +9,7 @@ export const resume = {
             "He is looking to apply skills gained through interpreting the European Union, analysing security regulations, and leading high-visibility projects to coding.", 
             "He is well placed to communicate technical complexities to diverse stakeholders."
         ],
-        skills: ["JavaScript", "Python", "HTML/CSS", "SQL", "Git", "Test-driven developement", "Object-oriented design", "Agile methodologies", "Project management", "Stakeholder management", "Copywriting"],
+        skills: ["JavaScript", "Python", "HTML/CSS", "No/SQL", "Git", "Test-driven developement", "Object-oriented design", "Agile methodologies", "Project management", "Stakeholder management", "Copywriting"],
         links: {
             github: "https://www.github.com/fantastito",
             linkedin: "https://www.linkedin.com/in/simon-budden-0b280518/",
@@ -69,18 +69,18 @@ export const resume = {
             tech: ["Flask", "React", "MongoDB", "Python", "Node.js", "bootstrap", "firebase", "Postman", "Trello", "Visual Studio"]
         },
         {
-            title: "Acebook",
-            description: "A social media web app developed from legacy code.",
-            link: "https://github.com/fantastito/Acebook",
-            liveUrl: null,
-            tech: ["MongoDB", "Express", "React", "Node.js", "CSS", "Postman", "Trello", "Visual Studio"]
-        },
-        {
             title: "simonbudden.dev",
             description: "A personal website for portfolio and projects.",
             link: "https://github.com/fantastito/pers-site",
             liveUrl: "https://simonbudden.dev",
             tech: ["React", "Jest", "Tailwind", "AWS"]
+        },
+        {
+            title: "Acebook",
+            description: "A social media web app developed from legacy code.",
+            link: "https://github.com/fantastito/Acebook",
+            liveUrl: null,
+            tech: ["MongoDB", "Express", "React", "Node.js", "CSS", "Postman", "Trello", "Visual Studio"]
         },
         {
             title: "Acebook Mobile",
