@@ -21,7 +21,7 @@ const Photos = () => {
     <div>
       <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl pt-4 pb-8 font-bold text-center">PHOTOGRAPHY</h1>
       {photos.length === 0 ? (
-        <p className='text-xl text-center'>📷 Well this is embarrasing... 🤷🏼‍♂️</p>
+        <p className='text-xl text-center'>📷 Well this is embarrassing... 🤷🏼‍♂️</p>
       ) : (
         <Gallery photos={photos} />
       )}
