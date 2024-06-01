@@ -2,6 +2,8 @@ import { render, screen } from '@testing-library/react';
 import App from '../App';
 import { resume } from '../resume.js';
 
+jest.mock('axios');
+
 describe('App Component', () => {
   it('should render the Navbar, TitleCard, AboutMe, Projects, and Experience components correctly', () => {
 
