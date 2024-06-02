@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, waitFor } from '@testing-library/react';
+import { render, screen, waitFor, act } from '@testing-library/react';
 import Photos from '../../components/Photos';
 import { fetchPhotos } from '../../flickrAPI';
 
@@ -18,7 +18,10 @@ describe('Photos Component', () => {
 
   it('should display error message if no photos are fetched', async () => {
     fetchPhotos.mockResolvedValue([]);
-    render(<Photos />);
+
+    await act(async () => {
+      render(<Photos />);
+    });
 
     await waitFor(() => expect(screen.getByText('📷 Well this is embarrassing... 🤷🏼‍♂️')).toBeInTheDocument());
   });
@@ -30,7 +33,9 @@ describe('Photos Component', () => {
     ];
     fetchPhotos.mockResolvedValue(mockPhotos);
 
-    render(<Photos />);
+    await act(async () => {
+      render(<Photos />);
+    });
 
     await waitFor(() => expect(screen.queryByText('📷 Loading... ⏳')).not.toBeInTheDocument());
     expect(screen.getByText('Mocked Gallery Component')).toBeInTheDocument();

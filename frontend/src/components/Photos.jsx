@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Gallery from 'react-photo-gallery';
-
 import { fetchPhotos } from '../flickrAPI';
 import { shuffleArray } from '../utils/shuffle';
 
 const Photos = () => {
   const [photos, setPhotos] = useState([]);
-  const [loading, setLoading] = useState(true); // Add loading state
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const userId = '200388503@N03';
@@ -16,6 +15,7 @@ const Photos = () => {
       setPhotos(shuffledPhotos);
       setLoading(false);
     };
+    
     getPhotos();
   }, []);
 
