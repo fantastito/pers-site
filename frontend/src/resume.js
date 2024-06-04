@@ -66,14 +66,14 @@ export const resume = {
             description: "A web app that connects volunteer tutors with students in need of some extra help. Tutors can indicate their subjects and availability; students can search for tutors and request a slot. Try logging in as stu@email.com / Password123!",
             link: "https://github.com/KatBiel/TutorMatch",
             liveUrl: "https://tutormatchfe.onrender.com/",
-            tech: ["Flask", "React", "MongoDB", "Python", "Node.js", "bootstrap", "firebase", "Postman", "Trello", "Visual Studio"]
+            tech: ["Flask", "React", "MongoDB", "Python", "Node.js", "bootstrap", "firebase", "Postman", "Trello", "Visual Studio", "CI/CD"]
         },
         {
             title: "simonbudden.dev",
             description: "A personal website for portfolio and projects.",
             link: "https://github.com/fantastito/pers-site",
             liveUrl: "https://simonbudden.dev",
-            tech: ["React", "Jest", "Tailwind", "AWS"]
+            tech: ["React", "Jest", "Tailwind", "AWS", "CI/CD"]
         },
         {
             title: "Acebook",
