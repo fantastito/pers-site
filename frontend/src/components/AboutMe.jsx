@@ -3,7 +3,7 @@ import linkedInMark from "../assets/linkedInMark.png"
 
 function AboutMe({ aboutMeData }) {
     if (!aboutMeData) {
-      return <div>No AboutMe data.</div>;
+      return <div>No AboutMe data. 🤷🏼‍♂️</div>;
     }
   
     const { summary = [], skills = [], links = {} } = aboutMeData;

@@ -89,5 +89,6 @@ export const resume = {
             liveUrl: null,
             tech: ["SwiftUI", "XCode", "Cloudinary", "Postman", "Trello"]
         }
-    ]
+    ],
+    interests: ["F1 🏁", "Photography 📷", "Hiking ⛰️", "Campari spritz 🍷"]
 };

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Resume from './components/Resume';
 import Photos from './components/Photos';
+import Quiz from './components/Quiz'
 import Footer from './components/Footer';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Resume />} exact />
           <Route path="/engineer" element={<Resume />} />
           <Route path="/photography" element={<Photos />} />
+          <Route path="/quiz" element={<Quiz />} />
         </Routes>
         <Footer />
       </div>

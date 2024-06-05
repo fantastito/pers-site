@@ -3,6 +3,7 @@ import { TitleCard } from './TitleCard';
 import { AboutMe } from './AboutMe';
 import { Projects } from './Projects';
 import { Experience } from './Experience';
+import Interests from './Interests';
 
 import { resume } from '../resume';
 
@@ -13,6 +14,7 @@ function Resume() {
       <AboutMe aboutMeData={resume.aboutme} />
       <Projects projectsData={resume.projects} />
       <Experience experienceData={resume.experience} />
+      <Interests interestsData={resume.interests} />
     </div>
   );
 }
