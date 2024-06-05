@@ -44,11 +44,11 @@ function Navbar() {
               Photography
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink to="/quiz" className={({ isActive }) => isActive ? activeLinkStyle + " font-medium" : "text-black hover:text-gray-700 font-medium"}>
               Photo quiz
             </NavLink>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>
