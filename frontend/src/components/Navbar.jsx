@@ -14,7 +14,9 @@ function Navbar() {
     <nav className="mb-8 p-4 bg-white">
       <div className="flex justify-between items-center">
         <div className="text-black font-bold">
-          Simon Budden
+          <NavLink to="/">
+            Simon Budden
+          </NavLink>
         </div>
         <div className="flex sm:hidden">
           <button
