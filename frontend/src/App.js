@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Resume from './components/Resume';
 import Photos from './components/Photos';
-import Quiz from './components/Quiz'
+// import Quiz from './components/Quiz'
 import Footer from './components/Footer';
 
 function App() {
