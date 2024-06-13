@@ -90,5 +90,5 @@ export const resume = {
             tech: ["SwiftUI", "XCode", "Cloudinary", "Postman", "Trello"]
         }
     ],
-    interests: ["F1 🏁", "Photography 📷", "Hiking ⛰️", "Campari spritz 🍷"]
+    interests: ["Photography 📷", "Hiking ⛰️","#dadlife 🧸", "F1 🏁", "Board games 🎲", "Campari spritz 🍷"]
 };
