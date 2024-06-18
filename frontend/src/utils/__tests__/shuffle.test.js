@@ -18,7 +18,7 @@ describe('shuffleArray', () => {
     test('With Math.random mocked, returns a pre-determined array', () => {
         const result = shuffleArray([1,2,3,4,5])
 
-        expect(result).toBe([2,3,4,5,1])
+        expect(result).toEqual([2,3,4,5,1])
     })
     test('all original elements of array are still in array', () => {
         const result = shuffleArray([1,2,3,4,5])
