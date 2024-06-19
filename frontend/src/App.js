@@ -13,7 +13,6 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Resume />} exact />
-          <Route path="/engineer" element={<Resume />} />
           <Route path="/photography" element={<Photos />} />
         </Routes>
         <Footer />

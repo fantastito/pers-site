@@ -35,7 +35,7 @@ export function Navbar() {
         </div>
         <ul className={`flex-col sm:flex sm:flex-row sm:space-x-4 ${isOpen ? 'block' : 'hidden'} sm:block`}>
           <li>
-            <NavLink to="/engineer" className={({ isActive }) => isActive ? activeLinkStyle + " font-medium" : "text-black hover:text-gray-700 font-medium"}>
+            <NavLink to="/" className={({ isActive }) => isActive ? activeLinkStyle + " font-medium" : "text-black hover:text-gray-700 font-medium"}>
               Software engineer
             </NavLink>
           </li>

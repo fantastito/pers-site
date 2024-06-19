@@ -13,7 +13,7 @@ describe('Navbar component', () => {
     
     const cvLink = screen.getByRole('link', { name: /Software engineer/i });
     expect(cvLink).toBeInTheDocument();
-    expect(cvLink).toHaveAttribute('href', '/engineer');
+    expect(cvLink).toHaveAttribute('href', '/');
     
     const photosLink = screen.getByRole('link', { name: /photography/i });
     expect(photosLink).toBeInTheDocument();
