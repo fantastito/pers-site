@@ -3,7 +3,7 @@ import Gallery from 'react-photo-gallery';
 import { fetchPhotos } from '../flickrAPI';
 import { shuffleArray } from '../utils/shuffle';
 
-const Photos = () => {
+export const Photos = () => {
   const [photos, setPhotos] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -15,7 +15,7 @@ const Photos = () => {
       setPhotos(shuffledPhotos);
       setLoading(false);
     };
-    
+
     getPhotos();
   }, []);
 
@@ -27,10 +27,8 @@ const Photos = () => {
       ) : photos.length === 0 ? (
         <p className='text-xl text-center'>📷 Well this is embarrassing... 🤷🏼‍♂️</p>
       ) : (
-        <Gallery photos={photos} />
+        <Gallery photos={photos} data-testid="gallery" />
       )}
     </div>
   );
 };
-
-export default Photos;

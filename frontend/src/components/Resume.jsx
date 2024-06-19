@@ -3,11 +3,11 @@ import { TitleCard } from './TitleCard';
 import { AboutMe } from './AboutMe';
 import { Projects } from './Projects';
 import { Experience } from './Experience';
-import Interests from './Interests';
+import { Interests } from './Interests';
 
 import { resume } from '../resume';
 
-function Resume() {
+export function Resume() {
   return (
     <div>
       <TitleCard />
@@ -17,6 +17,4 @@ function Resume() {
       <Interests interestsData={resume.interests} />
     </div>
   );
-}
-
-export default Resume;
+};

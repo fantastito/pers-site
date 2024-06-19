@@ -1,7 +1,7 @@
 import React,  { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-function Navbar() {
+export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -44,15 +44,8 @@ function Navbar() {
               Photography
             </NavLink>
           </li>
-          {/* <li>
-            <NavLink to="/quiz" className={({ isActive }) => isActive ? activeLinkStyle + " font-medium" : "text-black hover:text-gray-700 font-medium"}>
-              Photo quiz
-            </NavLink>
-          </li> */}
         </ul>
       </div>
     </nav>
   );
 }
-
-export default Navbar;

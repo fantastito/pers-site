@@ -1,4 +1,4 @@
-const Interests = ({interestsData}) => {
+export const Interests = ({interestsData}) => {
     if (!interestsData) {
         return <div className="text-center text-gray-600 text-xl">No Interests data.</div>;
     }
@@ -15,5 +15,3 @@ const Interests = ({interestsData}) => {
         </div>
     );
 };
-
-export default Interests;

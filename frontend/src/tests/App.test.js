@@ -1,13 +1,21 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import App from '../App';
 import { resume } from '../resume.js';
+import { fetchPhotos } from '../flickrAPI.js';
 
 jest.mock('axios');
+jest.mock('../flickrAPI');
 
 describe('App Component', () => {
-  it('should render the Navbar, TitleCard, AboutMe, Projects, and Experience components correctly', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
 
-    render(<App />);
+  it('should render the Navbar, TitleCard, AboutMe, Projects, and Experience components correctly', () => {
+    render(
+      <App />
+    );
 
     // Navbar
     expect(screen.getByText("Photography")).toBeInTheDocument();
@@ -28,5 +36,21 @@ describe('App Component', () => {
 
     // Footer
     expect(screen.getByText("© 2024 simonbudden.dev")).toBeInTheDocument();
+  });
+
+  it('should display the photos gallery', async () => {
+    fetchPhotos.mockResolvedValue([
+      { id: '1', src: 'photo1.jpg', width: 4, height: 3 },
+      { id: '2', src: 'photo2.jpg', width: 1, height: 1 },
+    ]);
+
+    render(
+        <App />
+    );
+
+    userEvent.click(screen.getByText('Photography'));
+
+    const photographyTexts = screen.getAllByText(/photography/i);
+    expect(photographyTexts.length).toBe(2);
   });
 });

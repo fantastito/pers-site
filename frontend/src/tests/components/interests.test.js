@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Interests from '../../components/Interests';
+import { Interests } from '../../components/Interests';
 
 describe('generate Interests component', () => {
     it('should generate the Interests section correction', () => {
