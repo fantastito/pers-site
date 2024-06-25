@@ -30,7 +30,7 @@ describe('Photos Component', () => {
     fetchPhotos.mockResolvedValue(mockPhotos);
 
     render(<Photos />);
-
+    // Check that the loading message appears
     expect(screen.getByText('📷 Loading... ⏳')).toBeInTheDocument();
 
     await waitFor(() => {
@@ -45,6 +45,20 @@ describe('Photos Component', () => {
       expect(imgElements.length).toBeGreaterThanOrEqual(1);
     });
   });
+  
+  it('should display error message', async () => {
+    const mockPhotos = null;
+    fetchPhotos.mockResolvedValue(mockPhotos);
+
+    render(<Photos />);
+
+    await waitFor(() => {
+      // Check that the loading text is removed
+      expect(screen.queryByText('📷 Loading... ⏳')).toBeNull();
+
+      // Check that the error message is present
+      expect(screen.getByText('📷 Well this is embarrassing... 🤷🏼‍♂️')).toBeInTheDocument();
+      
+    });
+  });
 });
-
-

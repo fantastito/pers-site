@@ -49,18 +49,28 @@ describe('generate Experience function', () => {
         ];
 
         render(<Experience experienceData={mockExperience} />);
-
+        //Check each experience loads
         expect(screen.getByText("Makers Academy")).toBeInTheDocument();
         expect(screen.getByText("Dept. for Science, Innovation and Technology")).toBeInTheDocument();
         expect(screen.getByText("Dept. for Transport")).toBeInTheDocument();
         expect(screen.getByText("European Parliament")).toBeInTheDocument();
-
+        
+        //Check dates load
         expect(screen.getByText("Oct. 2023 to Feb. 2024")).toBeInTheDocument();
-
+        
+        //Check roles load
         expect(screen.getByText("Coding and Software Development Bootcamp")).toBeInTheDocument();
-
+        
+        //Check details loads
         expect(screen.getByText("Python-based coding foundations module covering basics of coding and programmes' structure and cloud deployment.")).toBeInTheDocument();
-
+        
+        //Check skills loads
         expect(screen.getByText("JavaScript")).toBeInTheDocument();
+    });
+
+    it('should display the error message if no data passed into it', () => {
+        render(<Experience experienceData={null} />);
+
+        expect(screen.getByText("No Experience data.")).toBeInTheDocument();
     });
 });
