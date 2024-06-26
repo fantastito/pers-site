@@ -83,6 +83,13 @@ export const resume = {
             tech: ["MongoDB", "Express", "React", "Node.js", "CSS", "Postman", "Trello", "Visual Studio"]
         },
         {
+            title: "Rösti scraper",
+            description: "A web scraper and email notification to tell me when rösti is available in my local supermarket.",
+            link: "https://github.com/fantastito/rosti_scraper",
+            liveUrl: null,
+            tech: ["Python", "BeautifulSoup", "AWS Lambda", "AWS Simple Email Service"] 
+        },
+        {
             title: "Acebook Mobile",
             description: "An iOS frontend for a MERN social media app developed from a seed repo.",
             link: "https://github.com/fantastito/Acebook-Mobile",
