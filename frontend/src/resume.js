@@ -85,9 +85,9 @@ export const resume = {
         {
             title: "Rösti scraper",
             description: "A web scraper and email notification to tell me when rösti is available in my local supermarket.",
-            link: "https://github.com/fantastito/rosti_scraper",
+            link: "https://github.com/fantastito/new_rosti_scraper",
             liveUrl: null,
-            tech: ["Python", "BeautifulSoup", "AWS Lambda", "AWS Simple Email Service"] 
+            tech: ["Python", "BeautifulSoup", "AWS Lambda", "AWS Simple Email Service", "Docker"] 
         },
         {
             title: "Acebook Mobile",
