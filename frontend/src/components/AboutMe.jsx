@@ -11,7 +11,8 @@ function AboutMe({ aboutMeData }) {
     return (
       <div className="p-4">
         <p className="mb-4">
-          {summary.join(' ')}
+          <div className="pb-1">{summary.slice(0,2).join(' ')}</div>
+          <div>{summary.slice(2).join(' ')}</div> 
         </p>
   
         <div className="flex justify-center items-center space-x-4 mb-4">
