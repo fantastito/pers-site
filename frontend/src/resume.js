@@ -6,9 +6,9 @@ export const resume = {
         email: "simon.budden@gmail.com",
         summary: [
             "Creative, practical, experienced.",
-            "Simon is a junior software engineer with 10 years experience of interpreting the European Union and analysing maritime security.", 
+            "Simon is a junior software engineer with 10 years experience of interpreting the European Union in Brussels and analysing maritime security in London.", 
             "He is well placed to communicate complex concepts and has a technical mind.",
-            "Coding brings together the different strands of his career and passions."
+            "Coding brings together the different strands of his career and passions. Next steps TBC."
         ],
         skills: ["JavaScript", "Python", "HTML/CSS", "No/SQL", "Git", "Test-driven developement", "Object-oriented design", "Agile methodologies", "Project management", "Stakeholder management", "Copywriting"],
         links: {

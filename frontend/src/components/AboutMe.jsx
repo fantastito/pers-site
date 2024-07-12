@@ -10,11 +10,15 @@ function AboutMe({ aboutMeData }) {
   
     return (
       <div className="p-4">
+        
+        {/* Summary */}
         <p className="mb-4">
-          <div className="pb-1">{summary.slice(0,2).join(' ')}</div>
+          <div className="pb-1">{summary[0]}</div>
+          <div className="pb-1">{summary[1]}</div>
           <div>{summary.slice(2).join(' ')}</div> 
         </p>
-  
+
+        {/* GitHub, LinkedIn & Email links */}
         <div className="flex justify-center items-center space-x-4 mb-4">
           <a href={links.github} className="rounded-full">
             <img src={githubMark} alt="GitHub portfolio link" className="w-10 h-10 object-cover transition-transform duration-300 transform hover:scale-110" />
@@ -27,7 +31,7 @@ function AboutMe({ aboutMeData }) {
           </a>
         </div>
 
-
+        {/* Skills highlights */}
         <ul className="flex flex-wrap gap-2 justify-center">
           {skills.map((skill, j) => (
             <li key={j} className="bg-gray-200 rounded-full px-3 py-1 text-sm text-gray-700">{skill}</li>
